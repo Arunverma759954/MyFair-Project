@@ -27,9 +27,8 @@ export function HeroSlider() {
         {slides.map((slide, index) => (
           <div
             key={slide.src}
-            className={`absolute inset-0 transition-opacity duration-700 ${
-              index === active ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-700 ${index === active ? "opacity-100" : "opacity-0"
+              }`}
           >
             <Image
               src={slide.src}
@@ -43,7 +42,7 @@ export function HeroSlider() {
           </div>
         ))}
 
-        <div className="relative z-10 flex h-full items-start">
+        <div className="relative z-10 ml-45 flex h-full items-start">
           <div className="flex h-full w-full items-start px-4 pt-24 md:px-10 md:pt-28 lg:px-20 lg:pt-32">
             <div className="mt-4 w-full max-w-xl rounded-3xl bg-white/85 p-5 shadow-2xl shadow-black/40 backdrop-blur-md sm:mt-6 sm:p-6 md:mt-8 md:p-8">
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#b32633]">
@@ -94,11 +93,10 @@ export function HeroSlider() {
               type="button"
               aria-label={`Go to slide ${index + 1}`}
               onClick={() => setActive(index)}
-              className={`pointer-events-auto h-2 rounded-full transition-all ${
-                index === active
-                  ? "w-7 bg-white"
-                  : "w-3 bg-white/60 hover:bg-white"
-              }`}
+              className={`pointer-events-auto h-2 rounded-full transition-all ${index === active
+                ? "w-7 bg-white"
+                : "w-3 bg-white/60 hover:bg-white"
+                }`}
             />
           ))}
         </div>

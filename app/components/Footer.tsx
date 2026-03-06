@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-12 border-t border-white/10 bg-black/40 text-slate-100">
+    <footer className="mt-12 border-t border-white/10 bg-slate-950 text-slate-100">
       <div className="page-shell flex flex-col gap-8 py-10 md:flex-row md:justify-between">
         <div className="max-w-sm space-y-3">
           <p className="text-xs font-semibold tracking-[0.22em] text-amber-300">
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 bg-black/60">
+      <div className="border-t border-white/10 bg-black">
         <div className="page-shell flex flex-col items-center justify-between gap-2 py-3 text-xs text-slate-400 md:flex-row">
           <p>
             © {new Date().getFullYear()} Mayfair Hill Resort, Darjeeling. All
