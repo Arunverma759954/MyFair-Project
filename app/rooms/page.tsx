@@ -6,7 +6,7 @@ const rooms = [
     size: "30–32 sq. m.",
     occupancy: "Up to 2 adults",
     view: "Garden / partial hill view",
-    image: "/1.jpeg",
+    image: "/123.jpeg",
     amenities: [
       "King / twin beds",
       "Complimentary Wi-Fi",
@@ -21,7 +21,7 @@ const rooms = [
     size: "42–45 sq. m.",
     occupancy: "2 adults + 1 child",
     view: "Panoramic hill & town view",
-    image: "/2.jpeg",
+    image: "/124.jpeg",
     amenities: [
       "Separate living area",
       "Work desk & lounge seating",
@@ -36,7 +36,7 @@ const rooms = [
     size: "55–60 sq. m.",
     occupancy: "Up to 3 adults",
     view: "Sweeping Kanchenjunga & valley view",
-    image: "/13.jpeg",
+    image: "/125.jpeg",
     amenities: [
       "Expansive living & bedroom",
       "Walk-in wardrobe",
@@ -69,7 +69,7 @@ export default function RoomsPage() {
 
           <div className="relative mt-8 h-56 w-full overflow-hidden rounded-3xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 md:mt-0 md:h-64 md:w-2/5">
             <Image
-              src="/4.jpeg"
+              src="/122.jpeg"
               alt="Warm interiors overlooking the hills"
               fill
               className="object-cover"

@@ -22,7 +22,7 @@ export default function ServicesPage() {
 
           <div className="relative mt-8 h-56 w-full overflow-hidden rounded-3xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 md:mt-0 md:h-64 md:w-2/5">
             <Image
-              src="/8.jpeg"
+              src="/126.jpeg"
               alt="Dining with panoramic hill views"
               fill
               className="object-cover"

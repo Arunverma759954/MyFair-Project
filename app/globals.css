@@ -50,3 +50,27 @@ body {
     padding-bottom: 4rem;
   }
 }
+
+@keyframes whatsapp-bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-whatsapp-bounce {
+  animation: whatsapp-bounce 1.5s ease-in-out infinite;
+}

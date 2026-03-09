@@ -5,9 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const slides = [
-  { src: "/1.jpeg", alt: "Luxury room with warm wooden interiors" },
-  { src: "/2.jpeg", alt: "Spacious twin room with soft lighting" },
-  { src: "/13.jpeg", alt: "Elegant king room with seating area" },
+  { src: "/129.jpeg", alt: "Luxury hill resort view from Mayfair Hill Resort" },
+  { src: "/128.jpeg", alt: "Elegant interior and colonial charm at Darjeeling" },
 ];
 
 export function HeroSlider() {

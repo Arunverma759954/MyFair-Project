@@ -30,7 +30,7 @@ export default function AboutPage() {
 
           <div className="relative mt-8 h-56 w-full overflow-hidden rounded-3xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 md:mt-0 md:h-64 md:w-2/5">
             <Image
-              src="/2.jpeg"
+              src="/127.jpeg"
               alt="Colonial-inspired interiors at Mayfair Hill Resort"
               fill
               className="object-cover"

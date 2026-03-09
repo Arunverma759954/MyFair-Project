@@ -21,7 +21,7 @@ export default function ContactPage() {
               Address
             </h2>
             <p className="mt-1 text-xs text-neutral-600">
-              Mayfair Hill Resort, Mall Road, Near Observatory Hill, Darjeeling,
+              Mayfair Hill Resort, The Mall, opposite Governor House, Chauk Bazaar, Darjeeling,
               West Bengal 734101
             </p>
           </div>
@@ -29,9 +29,9 @@ export default function ContactPage() {
           <div>
             <h2 className="text-sm font-semibold text-neutral-900">Phone</h2>
             <p className="mt-1 text-xs text-neutral-600">
-              Reservations: +91 98765 43210
+              Reservations: +91 90541 22749
               <br />
-              Front Desk: +91 98765 43211
+              Front Desk: +91 90541 22749
             </p>
           </div>
 

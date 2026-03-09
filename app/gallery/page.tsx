@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const gallerySections = [
   {
-    title: "Rooms",
-    images: ["/1.jpeg", "/2.jpeg", "/13.jpeg"],
+    title: "Rooms & Suites",
+    images: ["/123.jpeg", "/124.jpeg", "/125.jpeg", "/127.jpeg"],
   },
   {
     title: "Dining & Lounges",
-    images: ["/8.jpeg", "/4.jpeg"],
+    images: ["/126.jpeg", "/122.jpeg"],
   },
   {
-    title: "Experiences & Views",
-    images: ["/3.jpeg"],
+    title: "Views & Banners",
+    images: ["/129.jpeg", "/128.jpeg"],
   },
 ];
 

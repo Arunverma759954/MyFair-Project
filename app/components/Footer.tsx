@@ -13,7 +13,7 @@ export function Footer() {
             colonial charm with warm Himalayan hospitality.
           </p>
           <p className="text-xs text-slate-400">
-            Mall Road, Near Observatory Hill, Darjeeling, West Bengal 734101
+            The Mall, opposite Governor House, Chauk Bazaar, Darjeeling, West Bengal 734101
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export function Footer() {
           <div className="space-y-2">
             <p className="font-semibold text-slate-100">Contact</p>
             <div className="flex flex-col gap-1 text-slate-300">
-              <p>+91 98765 43210</p>
+              <p>+91 90541 22749</p>
               <p>reservations@mayfairhilldarjeeling.com</p>
             </div>
           </div>

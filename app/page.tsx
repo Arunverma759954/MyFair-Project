@@ -34,7 +34,7 @@ export default function Home() {
           <div className="mt-8 md:mt-0 md:w-1/2">
             <div className="relative aspect-4/3 overflow-hidden rounded-[1.75rem] border border-white/80 bg-slate-200 shadow-xl shadow-slate-300/70">
               <Image
-                src="/13.jpeg"
+                src="/122.jpeg"
                 alt="Warm, luxurious bedroom at Mayfair Hill Resort"
                 fill
                 className="object-cover"
@@ -74,19 +74,19 @@ export default function Home() {
                   name: "Deluxe Room",
                   description:
                     "Cozy, elegant rooms with rich wooden accents and serene garden or partial hill views.",
-                  image: "/1.jpeg",
+                  image: "/123.jpeg",
                 },
                 {
                   name: "Executive Suite",
                   description:
                     "Spacious suites with a dedicated lounge, ideal for families and longer hill stays.",
-                  image: "/2.jpeg",
+                  image: "/124.jpeg",
                 },
                 {
                   name: "Luxury Suite",
                   description:
                     "Expansive suites with heritage-inspired décor and sweeping Himalayan panoramas.",
-                  image: "/4.jpeg",
+                  image: "/125.jpeg",
                 },
               ].map((room) => (
                 <div
@@ -157,7 +157,7 @@ export default function Home() {
           <div className="mt-8 md:mt-0 md:w-1/2">
             <div className="relative aspect-4/3 overflow-hidden rounded-[1.75rem] border border-white/80 bg-slate-200 shadow-xl shadow-slate-300/70">
               <Image
-                src="/8.jpeg"
+                src="/126.jpeg"
                 alt="Elegant dining and lounge space"
                 fill
                 className="object-cover"
