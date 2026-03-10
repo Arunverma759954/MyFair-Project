@@ -6,7 +6,7 @@ const rooms = [
     size: "30–32 sq. m.",
     occupancy: "Up to 2 adults",
     view: "Garden / partial hill view",
-    image: "/123.jpeg",
+    image: "/129.jpeg",
     amenities: [
       "King / twin beds",
       "Complimentary Wi-Fi",
@@ -21,7 +21,7 @@ const rooms = [
     size: "42–45 sq. m.",
     occupancy: "2 adults + 1 child",
     view: "Panoramic hill & town view",
-    image: "/124.jpeg",
+    image: "/129.jpeg",
     amenities: [
       "Separate living area",
       "Work desk & lounge seating",
@@ -81,10 +81,11 @@ export default function RoomsPage() {
 
       <section className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <div className="space-y-10">
-          {rooms.map((room) => (
+          {rooms.map((room, index) => (
             <article
               key={room.name}
-              className="overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm md:flex"
+              className={`overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm md:flex ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
+                }`}
             >
               <div className="relative h-60 w-full md:h-auto md:w-1/2">
                 <Image
