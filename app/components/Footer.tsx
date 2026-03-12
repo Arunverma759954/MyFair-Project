@@ -75,6 +75,23 @@ export function Footer() {
           </p>
         </div>
       </div>
+
+      {/* Developer Credit Bar */}
+      <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border-t border-amber-400/20">
+        <div className="page-shell flex items-center justify-center py-2.5">
+          <p className="text-center text-[11px] tracking-wide text-slate-400">
+            Designed &amp; Developed by{" "}
+            <Link
+              href="https://www.digitalsolution360.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-amber-400 hover:text-amber-300 transition-colors duration-200 underline underline-offset-2"
+            >
+              Digital Solution 360
+            </Link>
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }

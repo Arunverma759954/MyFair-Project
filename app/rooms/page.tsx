@@ -1,12 +1,14 @@
 import Image from "next/image";
 
+import { RoomImageSlider } from "../components/RoomImageSlider";
+
 const rooms = [
   {
     name: "Deluxe Room",
     size: "30–32 sq. m.",
     occupancy: "Up to 2 adults",
     view: "Garden / partial hill view",
-    image: "/129.jpeg",
+    images: ["/129.jpeg", "/123.jpeg", "/1.jpeg", "/2.jpeg"],
     amenities: [
       "King / twin beds",
       "Complimentary Wi-Fi",
@@ -21,7 +23,7 @@ const rooms = [
     size: "42–45 sq. m.",
     occupancy: "2 adults + 1 child",
     view: "Panoramic hill & town view",
-    image: "/129.jpeg",
+    images: ["/128.jpeg", "/124.jpeg", "/3.jpeg", "/4.jpeg"],
     amenities: [
       "Separate living area",
       "Work desk & lounge seating",
@@ -36,7 +38,7 @@ const rooms = [
     size: "55–60 sq. m.",
     occupancy: "Up to 3 adults",
     view: "Sweeping Kanchenjunga & valley view",
-    image: "/125.jpeg",
+    images: ["/125.jpeg", "/127.jpeg", "/12.jpeg", "/13.jpeg"],
     amenities: [
       "Expansive living & bedroom",
       "Walk-in wardrobe",
@@ -87,14 +89,7 @@ export default function RoomsPage() {
               className={`overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm md:flex ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
                 }`}
             >
-              <div className="relative h-60 w-full md:h-auto md:w-1/2">
-                <Image
-                  src={room.image}
-                  alt={room.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <RoomImageSlider images={room.images} alt={room.name} />
 
               <div className="flex flex-1 flex-col gap-4 p-5 md:w-1/2 md:p-6">
                 <header>
@@ -158,6 +153,7 @@ export default function RoomsPage() {
           ))}
         </div>
       </section>
+
     </div>
   );
 }

@@ -3,15 +3,15 @@ import Image from "next/image";
 const gallerySections = [
   {
     title: "Rooms & Suites",
-    images: ["/123.jpeg", "/124.jpeg", "/125.jpeg", "/127.jpeg"],
+    images: ["/123.jpeg", "/124.jpeg", "/125.jpeg", "/127.jpeg", "/1.jpeg", "/2.jpeg", "/3.jpeg"],
   },
   {
     title: "Dining & Lounges",
-    images: ["/126.jpeg", "/122.jpeg"],
+    images: ["/126.jpeg", "/122.jpeg", "/4.jpeg", "/5.jpeg"],
   },
   {
-    title: "Views & Banners",
-    images: ["/129.jpeg", "/128.jpeg"],
+    title: "Views & Resort Highlights",
+    images: ["/129.jpeg", "/128.jpeg", "/7.jpeg", "/8.jpeg", "/9.jpeg", "/10.jpeg", "/11.jpeg", "/12.jpeg", "/13.jpeg", "/14.jpeg"],
   },
 ];
 
