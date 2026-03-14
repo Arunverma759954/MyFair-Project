@@ -54,12 +54,12 @@ export default function RoomsPage() {
   return (
     <div className="bg-stone-50">
       <section className="relative overflow-hidden bg-neutral-900">
-        <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-8 px-4 py-16 md:flex-row md:items-center md:px-6 md:py-20">
+        <div className="page-shell relative mx-auto flex max-w-7xl flex-col items-start gap-6 py-10 sm:gap-8 sm:py-16 md:flex-row md:items-center md:py-20">
           <div className="md:w-3/5">
             <p className="text-xs font-semibold tracking-[0.24em] text-[#f6c35c]">
               ROOMS &amp; SUITES
             </p>
-            <h1 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+            <h1 className="mt-3 text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
               Stay Elevated Above the Clouds
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-neutral-200 sm:text-base">
@@ -69,7 +69,7 @@ export default function RoomsPage() {
             </p>
           </div>
 
-          <div className="relative mt-8 h-56 w-full overflow-hidden rounded-3xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 md:mt-0 md:h-64 md:w-2/5">
+          <div className="relative mt-6 h-48 w-full overflow-hidden rounded-2xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 sm:h-56 md:mt-0 md:h-64 md:w-2/5 md:rounded-3xl">
             <Image
               src="/122.jpeg"
               alt="Warm interiors overlooking the hills"
@@ -81,8 +81,8 @@ export default function RoomsPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-        <div className="space-y-10">
+      <section className="page-shell mx-auto max-w-7xl py-10 md:py-16">
+        <div className="space-y-8 md:space-y-10">
           {rooms.map((room, index) => (
             <article
               key={room.name}
@@ -91,7 +91,7 @@ export default function RoomsPage() {
             >
               <RoomImageSlider images={room.images} alt={room.name} />
 
-              <div className="flex flex-1 flex-col gap-4 p-5 md:w-1/2 md:p-6">
+              <div className="flex flex-1 flex-col gap-3 p-4 sm:gap-4 sm:p-5 md:w-1/2 md:p-6">
                 <header>
                   <h2 className="text-lg font-semibold text-neutral-900">
                     {room.name}
@@ -101,7 +101,7 @@ export default function RoomsPage() {
                   </p>
                 </header>
 
-                <div className="grid gap-3 text-xs text-neutral-700 sm:grid-cols-3">
+                <div className="grid gap-3 text-xs text-neutral-700 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                   <div>
                     <p className="font-semibold text-neutral-900">Room size</p>
                     <p>{room.size}</p>

@@ -7,7 +7,7 @@ export function WhatsAppButton() {
     const message = "Hello! I would like to inquire about a stay at Mayfair Hill Resort.";
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 animate-whatsapp-bounce">
+        <div className="fixed bottom-6 right-6 z-50 animate-whatsapp-bounce sm:bottom-6">
             <Link
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
                 target="_blank"

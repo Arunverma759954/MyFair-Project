@@ -19,8 +19,8 @@ export default function GalleryPage() {
   return (
     <div className="bg-stone-50">
       <section className="border-b border-neutral-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-          <h1 className="text-3xl font-semibold text-neutral-900 sm:text-4xl">
+        <div className="page-shell mx-auto max-w-7xl py-10 md:py-16">
+          <h1 className="text-2xl font-semibold text-neutral-900 sm:text-3xl md:text-4xl">
             Gallery
           </h1>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-neutral-700 sm:text-base">
@@ -30,14 +30,14 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-12">
+      <section className="page-shell mx-auto max-w-7xl py-6 md:py-12">
         <div className="space-y-10">
           {gallerySections.map((section) => (
             <div key={section.title} className="space-y-4">
               <h2 className="text-lg font-semibold text-neutral-900">
                 {section.title}
               </h2>
-              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3">
                 {section.images.map((src) => (
                   <div
                     key={src}

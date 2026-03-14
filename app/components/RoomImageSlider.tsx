@@ -20,7 +20,7 @@ export function RoomImageSlider({ images, alt }: RoomImageSliderProps) {
     };
 
     return (
-        <div className="group relative h-60 w-full overflow-hidden md:h-auto md:w-1/2">
+        <div className="group relative h-52 w-full overflow-hidden min-[480px]:h-60 md:h-auto md:min-h-[280px] md:w-1/2">
             {images.map((image, index) => (
                 <div
                     key={image}
@@ -41,7 +41,7 @@ export function RoomImageSlider({ images, alt }: RoomImageSliderProps) {
                 <>
                     <button
                         onClick={prevSlide}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 p-2 text-white opacity-0 transition-all hover:bg-black/50 group-hover:opacity-100"
+                        className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white transition-all hover:bg-black/50 sm:left-4 sm:opacity-0 sm:group-hover:opacity-100"
                         aria-label="Previous image"
                     >
                         <svg
@@ -61,7 +61,7 @@ export function RoomImageSlider({ images, alt }: RoomImageSliderProps) {
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 p-2 text-white opacity-0 transition-all hover:bg-black/50 group-hover:opacity-100"
+                        className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white transition-all hover:bg-black/50 sm:right-4 sm:opacity-0 sm:group-hover:opacity-100"
                         aria-label="Next image"
                     >
                         <svg
@@ -84,7 +84,7 @@ export function RoomImageSlider({ images, alt }: RoomImageSliderProps) {
 
             {/* Pagination dots */}
             {images.length > 1 && (
-                <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5Indicator">
+                <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5">
                     {images.map((_, index) => (
                         <button
                             key={index}

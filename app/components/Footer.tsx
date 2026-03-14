@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-12 border-t border-white/10 bg-slate-950 text-slate-100">
-      <div className="page-shell flex flex-col gap-8 py-10 md:flex-row md:justify-between">
-        <div className="max-w-sm space-y-3">
+    <footer className="mt-8 border-t border-white/10 bg-slate-950 text-slate-100 sm:mt-12">
+      <div className="page-shell flex flex-col gap-6 py-8 sm:gap-8 sm:py-10 md:flex-row md:justify-between">
+        <div className="max-w-sm space-y-2 sm:space-y-3">
           <p className="text-xs font-semibold tracking-[0.22em] text-amber-300">
             MAYFAIR HILL RESORT
           </p>
@@ -12,12 +12,12 @@ export function Footer() {
             A luxury heritage retreat in the heart of Darjeeling, blending
             colonial charm with warm Himalayan hospitality.
           </p>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-slate-400 break-words">
             The Mall, opposite Governor House, Chauk Bazaar, Darjeeling, West Bengal 734101
           </p>
         </div>
 
-        <div className="grid flex-1 grid-cols-2 gap-8 text-sm md:grid-cols-3">
+        <div className="grid flex-1 grid-cols-1 gap-6 text-sm sm:grid-cols-2 sm:gap-8 md:grid-cols-3">
           <div className="space-y-2">
             <p className="font-semibold text-slate-100">Explore</p>
             <div className="flex flex-col gap-1 text-slate-300">
@@ -59,7 +59,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10 bg-black">
-        <div className="page-shell flex flex-col items-center justify-between gap-2 py-3 text-xs text-slate-400 md:flex-row">
+        <div className="page-shell flex flex-col items-center justify-between gap-2 py-3 text-center text-xs text-slate-400 sm:text-left md:flex-row">
           <p>
             © {new Date().getFullYear()} Mayfair Hill Resort, Darjeeling. All
             rights reserved.

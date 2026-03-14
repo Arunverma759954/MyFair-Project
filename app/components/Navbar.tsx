@@ -18,8 +18,8 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 flex justify-center px-3 pt-3">
-      <div className="w-full max-w-7xl rounded-full border border-white/12 bg-slate-900/80 px-4 shadow-lg shadow-black/40 backdrop-blur-xl md:px-6">
+    <header className="fixed inset-x-0 top-0 z-40 flex justify-center px-3 pt-3 min-w-0 max-w-full">
+      <div className="w-full max-w-7xl min-w-0 rounded-full border border-white/12 bg-slate-900/80 px-4 shadow-lg shadow-black/40 backdrop-blur-xl md:px-6">
         <nav className="flex items-center justify-between gap-4 py-2.5">
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-linear-to-tr from-[#facc6b] via-[#f9735b] to-[#b91c1c] shadow-lg shadow-black/40">
@@ -37,11 +37,14 @@ export function Navbar() {
 
           <button
             type="button"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-sm text-slate-100 md:hidden"
+            className="inline-flex h-9 w-9 flex-col items-center justify-center gap-1 rounded-full border border-white/20 text-slate-100 md:hidden"
             onClick={() => setOpen((prev) => !prev)}
             aria-label="Toggle navigation"
+            aria-expanded={open}
           >
-            <span className="h-[2px] w-4 bg-slate-100" />
+            <span className={`h-0.5 w-4 rounded-full bg-slate-100 transition-all ${open ? "translate-y-1.5 rotate-45" : ""}`} />
+            <span className={`h-0.5 w-4 rounded-full bg-slate-100 transition-all ${open ? "opacity-0" : ""}`} />
+            <span className={`h-0.5 w-4 rounded-full bg-slate-100 transition-all ${open ? "-translate-y-1.5 -rotate-45" : ""}`} />
           </button>
 
           <div className="hidden items-center gap-6 text-[11px] font-medium text-slate-100 md:flex">
@@ -95,10 +98,19 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-md px-2 py-1.5 hover:bg-slate-800/80"
+                className="flex items-center gap-2 rounded-md px-2 py-1.5 hover:bg-slate-800/80"
                 onClick={() => setOpen(false)}
               >
-                {item.label}
+                {item.href === "/contact" ? (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-300" aria-hidden>
+                      <path fillRule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97z" clipRule="evenodd" />
+                    </svg>
+                    {item.label}
+                  </>
+                ) : (
+                  item.label
+                )}
               </Link>
             ))}
             <Link

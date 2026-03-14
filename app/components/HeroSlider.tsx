@@ -22,7 +22,7 @@ export function HeroSlider() {
 
   return (
     <section className="relative isolate overflow-hidden -mt-20">
-      <div className="relative w-full h-[75vh] min-h-[520px] md:h-[85vh] lg:h-[90vh]">
+      <div className="relative w-full h-[70vh] min-h-[400px] sm:min-h-[480px] md:h-[85vh] md:min-h-[520px] lg:h-[90vh]">
         {slides.map((slide, index) => (
           <div
             key={slide.src}
@@ -41,37 +41,37 @@ export function HeroSlider() {
           </div>
         ))}
 
-        <div className="relative z-10 ml-45 flex h-full items-start">
-          <div className="flex h-full w-full items-start px-4 pt-24 md:px-10 md:pt-28 lg:px-20 lg:pt-32">
-            <div className="mt-4 w-full max-w-xl rounded-3xl bg-white/85 p-5 shadow-2xl shadow-black/40 backdrop-blur-md sm:mt-6 sm:p-6 md:mt-8 md:p-8">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center px-[28px] md:items-start md:px-[36px]">
+          <div className="w-full pt-20 pb-10 sm:pt-24 sm:pb-12 md:pt-32 lg:pt-40">
+            <div className="min-w-0 w-full max-w-xl rounded-2xl bg-white/90 p-5 shadow-2xl shadow-black/40 backdrop-blur-md sm:max-w-xl sm:rounded-3xl sm:p-6 md:mt-10 md:max-w-xl md:p-8 lg:max-w-2xl lg:p-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#b32633]">
                 LUXURY HILL RETREAT · DARJEELING
               </p>
-              <h1 className="mt-3 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl md:text-[2.7rem]">
+              <h1 className="mt-2 text-2xl font-semibold leading-tight text-slate-900 sm:mt-3 sm:text-3xl md:text-4xl lg:text-5xl">
                 Where Colonial Charm Meets Himalayan Serenity
               </h1>
-              <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+              <p className="mt-4 text-sm leading-relaxed text-slate-700 sm:text-base lg:text-lg lg:max-w-3xl">
                 Timeless interiors, mist-kissed mornings, and curated experiences
                 overlooking tea gardens and the Kanchenjunga range – crafted for
                 guests who love slow, elegant hill escapes.
               </p>
 
-              <div className="mt-5 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3 sm:mt-8">
                 <Link
                   href="/contact#booking"
-                  className="inline-flex items-center rounded-full bg-linear-to-r from-[#b32633] via-[#e11d48] to-[#f97316] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-black/30 hover:brightness-110"
+                  className="inline-flex items-center rounded-full bg-linear-to-r from-[#b32633] via-[#e11d48] to-[#f97316] px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-black/30 hover:brightness-110"
                 >
                   Book Your Stay
                 </Link>
                 <Link
                   href="/rooms"
-                  className="inline-flex items-center rounded-full border border-slate-300 bg-white/70 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:bg-white"
+                  className="inline-flex items-center rounded-full border border-slate-300 bg-white/70 px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:bg-white"
                 >
                   Explore Rooms
                 </Link>
               </div>
 
-              <div className="mt-5 flex flex-wrap gap-4 text-[11px] text-slate-600">
+              <div className="mt-6 flex flex-wrap gap-4 text-[11px] text-slate-600 sm:mt-8 sm:gap-6 lg:text-xs">
                 <div className="flex items-center gap-2">
                   <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#b32633]" />
                   <p>Panoramic Himalayan views</p>

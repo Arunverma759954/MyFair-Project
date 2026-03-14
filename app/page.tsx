@@ -168,7 +168,7 @@ export default function Home() {
         </section>
 
         <section className="border-y border-slate-200/70 bg-slate-50/80">
-          <div className="page-shell section-shell">
+          <div className="page-shell py-12 md:py-20">
             <div className="md:flex md:items-start md:justify-between md:gap-10">
               <div className="md:w-1/2">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#b32633]">
@@ -235,7 +235,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="page-shell section-shell">
+        <section className="page-shell py-12 md:py-20">
           <div className="md:flex md:items-start md:gap-10">
             <div className="md:w-1/2">
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#b32633]">
@@ -314,7 +314,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="mt-8 grid flex-1 gap-4 md:mt-0 md:grid-cols-3">
+              <div className="mt-8 grid flex-1 items-stretch gap-4 md:mt-0 md:grid-cols-3">
                 {[
                   {
                     quote:
@@ -334,7 +334,7 @@ export default function Home() {
                 ].map((review) => (
                   <div
                     key={review.name}
-                    className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-800 shadow-sm"
+                    className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-800 shadow-sm h-full"
                   >
                     <p className="text-xs leading-relaxed">{review.quote}</p>
                     <p className="mt-3 text-[11px] font-semibold tracking-wide text-[#b32633]">
@@ -348,7 +348,7 @@ export default function Home() {
         </section>
 
         <section className="bg-transparent">
-          <div className="page-shell section-shell text-center">
+          <div className="page-shell py-12 md:py-24 text-center">
             <p className="text-xs font-semibold tracking-[0.24em] text-[#b32633]">
               PLAN YOUR GETAWAY
             </p>

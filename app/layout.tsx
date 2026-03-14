@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
+import { ContactButton } from "./components/ContactButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
     "Experience colonial charm, Himalayan views, and refined hospitality at Mayfair Hill Resort in Darjeeling. Luxury rooms, curated experiences, and elegant event spaces.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,10 +38,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-50 text-slate-900`}
       >
-        <div className="flex min-h-screen flex-col">
+        <div className="flex min-h-screen min-w-0 max-w-full flex-col overflow-x-hidden">
           <Navbar />
-          <main className="flex-1 pt-20">{children}</main>
+          <main className="flex-1 pt-16 sm:pt-20">{children}</main>
           <Footer />
+          <ContactButton />
           <WhatsAppButton />
         </div>
       </body>

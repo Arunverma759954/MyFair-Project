@@ -4,12 +4,12 @@ export default function ServicesPage() {
   return (
     <div className="bg-stone-50">
       <section className="relative overflow-hidden bg-neutral-900" id="dining">
-        <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-8 px-4 py-16 md:flex-row md:items-center md:px-6 md:py-20">
+        <div className="page-shell relative mx-auto flex max-w-7xl flex-col items-start gap-6 py-10 sm:gap-8 sm:py-16 md:flex-row md:items-center md:py-20">
           <div className="md:w-3/5">
             <p className="text-xs font-semibold tracking-[0.24em] text-[#f6c35c]">
               DINING &amp; LOUNGES
             </p>
-            <h1 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+            <h1 className="mt-3 text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
               Flavours Inspired by the Hills
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-neutral-200 sm:text-base">
@@ -20,7 +20,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="relative mt-8 h-56 w-full overflow-hidden rounded-3xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 md:mt-0 md:h-64 md:w-2/5">
+          <div className="relative mt-6 h-48 w-full overflow-hidden rounded-2xl border border-white/15 bg-neutral-800 shadow-xl shadow-black/30 sm:h-56 md:mt-0 md:h-64 md:w-2/5 md:rounded-3xl">
             <Image
               src="/126.jpeg"
               alt="Dining with panoramic hill views"
@@ -36,7 +36,7 @@ export default function ServicesPage() {
         className="border-b border-neutral-200 bg-white"
         id="experiences"
       >
-        <div className="mx-auto max-w-6xl px-4 py-12 md:flex md:items-start md:gap-10 md:px-6 md:py-16">
+        <div className="page-shell mx-auto max-w-7xl py-10 md:flex md:items-start md:gap-10 md:py-16">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-semibold text-neutral-900 sm:text-3xl">
               Curated Himalayan Experiences
@@ -77,7 +77,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-b border-neutral-200 bg-stone-50">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:flex md:items-start md:gap-10 md:px-6 md:py-16">
+        <div className="page-shell mx-auto max-w-7xl py-10 md:flex md:items-start md:gap-10 md:py-16">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-semibold text-neutral-900 sm:text-3xl">
               Weddings &amp; Celebrations

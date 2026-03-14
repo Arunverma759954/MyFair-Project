@@ -2,8 +2,8 @@ export default function ContactPage() {
   return (
     <div className="bg-stone-50">
       <section className="border-b border-neutral-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-          <h1 className="text-3xl font-semibold text-neutral-900 sm:text-4xl">
+        <div className="page-shell mx-auto max-w-7xl py-10 md:py-16">
+          <h1 className="text-2xl font-semibold text-neutral-900 sm:text-3xl md:text-4xl">
             Contact Us
           </h1>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-neutral-700 sm:text-base">
@@ -14,7 +14,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-10 md:flex md:items-start md:gap-10 md:px-6 md:py-14">
+      <section className="page-shell mx-auto max-w-7xl py-8 md:flex md:items-start md:gap-10 md:py-14">
         <div className="space-y-5 text-sm text-neutral-700 md:w-2/5">
           <div>
             <h2 className="text-sm font-semibold text-neutral-900">
@@ -110,7 +110,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                 <div>
                   <label className="block text-xs font-medium text-neutral-700">
                     Adults
