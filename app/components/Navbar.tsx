@@ -18,8 +18,8 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 flex justify-center px-3 pt-3 min-w-0 max-w-full">
-      <div className="w-full max-w-7xl min-w-0 rounded-full border border-white/12 bg-slate-900/80 px-4 shadow-lg shadow-black/40 backdrop-blur-xl md:px-6">
+    <header className="fixed inset-x-0 top-0 z-40 flex flex-col items-center px-3 pt-3 min-w-0 max-w-full md:flex-row md:justify-center">
+      <div className="w-full max-w-7xl min-w-0 shrink-0 rounded-full border border-white/12 bg-slate-900/80 px-4 shadow-lg shadow-black/40 backdrop-blur-xl md:px-6">
         <nav className="flex items-center justify-between gap-4 py-2.5">
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-linear-to-tr from-[#facc6b] via-[#f9735b] to-[#b91c1c] shadow-lg shadow-black/40">
@@ -92,7 +92,7 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="mt-2 w-full max-w-6xl rounded-3xl border border-white/10 bg-slate-950/95 px-4 pb-3 pt-2 text-sm font-medium text-slate-50 shadow-xl shadow-black/60 md:hidden">
+        <div className="mt-2 w-full max-w-7xl rounded-2xl border border-white/10 bg-slate-950/95 px-4 pb-4 pt-3 text-sm font-medium text-slate-50 shadow-xl shadow-black/60 md:hidden">
           <div className="flex flex-col gap-1">
             {navItems.map((item) => (
               <Link
